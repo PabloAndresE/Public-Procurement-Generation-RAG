@@ -1,0 +1,34 @@
+# Validation Report
+
+Archivo: ../../data_curated/corpus_estructurado/corpus_cmv.csv
+
+| rule                | column                                    |   exists |   non_null_ratio |   threshold | passed   |   duplicates |   valid_count |   total | pattern    |   checked_rows |   is_numeric |   invalid_values |
+|:--------------------|:------------------------------------------|---------:|-----------------:|------------:|:---------|-------------:|--------------:|--------:|:-----------|---------------:|-------------:|-----------------:|
+| mandatory_columns   | COD_PROC                                  |        1 |              1   |         0.7 | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| mandatory_columns   | NOMBRE_ENTID_CONTRAT                      |        1 |              1   |         0.7 | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| mandatory_columns   | RUC                                       |        1 |              1   |         0.7 | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| unique_key          | COD_PROC                                  |      nan |            nan   |       nan   | True     |            0 |           nan |     nan | nan        |            nan |          nan |              nan |
+| ruc_length          | RUC                                       |        1 |            nan   |       nan   | True     |          nan |             2 |       2 | nan        |            nan |          nan |              nan |
+| date_raw_presence   | FECHA                                     |      nan |              1   |       nan   | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| date_raw_presence   | FECHA_FIRMA_OFERTA                        |      nan |              0.5 |       nan   | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| date_raw_presence   | FECHA_FABRICACION                         |      nan |              0.5 |       nan   | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| date_raw_presence   | FECHA_RECEPCION                           |      nan |              0.5 |       nan   | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| date_raw_presence   | FECHA_NACIMIENTO_CP                       |      nan |              0.5 |       nan   | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| date_raw_presence   | FECHA_GRADUACION_CP                       |      nan |              0.5 |       nan   | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| date_raw_presence   | FECHA_OBTEN_TITUL_CP                      |      nan |              0.5 |       nan   | True     |          nan |           nan |     nan | nan        |            nan |          nan |              nan |
+| date_iso_format     | FECHA_NORMALIZADA                         |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              2 |          nan |              nan |
+| date_iso_format     | DIAS_FECHALIMITECONVALIDACION_NORMALIZADA |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              0 |          nan |              nan |
+| date_iso_format     | ES_FECHA_ENTREGA_NORMALIZADA              |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              0 |          nan |              nan |
+| date_iso_format     | FECHA_FIRMA_OFERTA_NORMALIZADA            |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              1 |          nan |              nan |
+| date_iso_format     | TIPO_FECHA_CRONOGRAMA_NORMALIZADA         |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              0 |          nan |              nan |
+| date_iso_format     | FECHA_FABRICACION_NORMALIZADA             |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              1 |          nan |              nan |
+| date_iso_format     | FECHA_RECEPCION_NORMALIZADA               |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              1 |          nan |              nan |
+| date_iso_format     | TIPO_FECHA_NORMALIZADA                    |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              0 |          nan |              nan |
+| date_iso_format     | FECHA_NACIMIENTO_CP_NORMALIZADA           |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              1 |          nan |              nan |
+| date_iso_format     | FECHA_GRADUACION_CP_NORMALIZADA           |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              1 |          nan |              nan |
+| date_iso_format     | FECHA_OBTEN_TITUL_CP_NORMALIZADA          |      nan |            nan   |       nan   | True     |          nan |           nan |     nan | YYYY-MM-DD |              1 |          nan |              nan |
+| numeric_field       | PRESUPUESTO_REFERENCIAL_NUMEROS_USD       |        1 |            nan   |       nan   | True     |          nan |           nan |     nan | nan        |            nan |            1 |              nan |
+| numeric_field       | VALOR_CONTRATO_USD                        |        1 |            nan   |       nan   | True     |          nan |           nan |     nan | nan        |            nan |            1 |              nan |
+| numeric_field       | VALOR_OFERTADO_USD                        |        1 |            nan   |       nan   | True     |          nan |           nan |     nan | nan        |            nan |            1 |              nan |
+| numeric_field       | TOTAL_USD                                 |        1 |            nan   |       nan   | True     |          nan |           nan |     nan | nan        |            nan |            1 |              nan |
+| categorical_allowed | TIPO_PERSONA_NORMALIZADA                  |        0 |            nan   |       nan   | False    |          nan |           nan |     nan | nan        |            nan |          nan |              nan |

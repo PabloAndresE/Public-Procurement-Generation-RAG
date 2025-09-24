@@ -1,0 +1,6 @@
+{
+  "file": "../../data_curated/corpus_estructurado/corpus_cmv.csv",
+  "total_rules": 28,
+  "passed_rules": 27,
+  "passed_ratio": 0.964
+}

@@ -33,14 +33,24 @@ El script `etl_ushay_v0.py` sirve para extraer campos clave desde archivos `.ush
 - Python 3.10+
 - Paquete: `pandas`
 
-Instalación:
+## Creacion de entorno virtual
+```bash
+python3 -m venv .venv
+```
+
+### Activa el entorno
+```bash
+source .venv/bin/activate
+```
+
+### Instalación:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Uso
 ```bash
-python etl_ushay_v0.py --input_glob "/data_raw/*.ushay" --out_csv "/data_curated/corpus_cmv.csv"
+python3 etl/corpus_estructurado/extraction_v0.py --input_glob "data_raw/ushay/*.ushay" --out_csv "data_curated/corpus_estructurado/corpus_cmv.csv"
 ```
 
 ## Notas
